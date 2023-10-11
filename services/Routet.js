@@ -27,19 +27,16 @@ const Router = {
         switch(route) {
             // Handle Home page
             case '/':
-                pageElement = document.createElement('h1');
-                pageElement.textContent = "Menu"
+                pageElement = document.createElement('menu-page');
                 break;
             // Handle cart page
             case '/order':
-                pageElement = document.createElement('h1');
-                pageElement.textContent = "Order"
+                pageElement = document.createElement('order-page');
                 break;
             default:
                 // Handle product details page with id param like /product-123
                 if(route.startsWith('/product-')) {
-                    pageElement = document.createElement('h1');
-                    pageElement.textContent = "Product details";
+                    pageElement = document.createElement('details-page');
                     const paramId = route.substring(route.lastIndexOf('-') + 1);
                     pageElement.dataset.id = paramId;
                 }

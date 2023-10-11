@@ -2,6 +2,10 @@ import { loadMenuData } from "./services/Menu.js";
 import Router from "./services/Routet.js";
 import Store from "./services/Store.js";
 
+// Links to my web components
+import { DetailsPage } from "./components/DetailsPage.js";
+import { MenuPage } from "./components/MenuPage.js";
+import { OrderPage } from "./components/OrderPage.js";
 
 window.app = {}
 app.store = Store;
